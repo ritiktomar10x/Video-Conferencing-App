@@ -1,0 +1,13 @@
+.main-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(".../public/background.png"), url("background.png");
+};
+
+.wrap{
+    background-image: url(".../public/background.png"), url("background.png");
+}
+
