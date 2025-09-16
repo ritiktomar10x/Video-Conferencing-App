@@ -13,13 +13,13 @@ import ChatIcon from '@mui/icons-material/Chat'
 import VideocamIcon from '@mui/icons-material/Videocam';
 import VideocamOffIcon from '@mui/icons-material/VideocamOff';
 import { FormContext } from '../contexts/FormContext.jsx';
-
+import {api_url} from "../environment.js";
 
 import styles from '../styles/VideoComponent.module.css';
 import '../styles/Try.css';
 
 
-const server_url = "http://localhost:8080";
+const server_url = api_url;
 
 var connections = {};
 
