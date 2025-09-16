@@ -4,10 +4,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(".../public/background.png"), url("background.png");
+    background-image: url(".../public/background.png"), url("background.jpg");
 }
 
 .wrap{
-    background-image: url(".../public/background.png"), url("background.png");
+    background-image: url(".../public/background.png"), url("background.jpg");
 }
 

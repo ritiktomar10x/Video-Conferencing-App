@@ -508,13 +508,10 @@ useEffect(()=>{
 
                     {/*  */}
 
-                    <div className="lobby-container" style={{display:"flex",
-                        alignItems:"center",
-                        justifyContent:"center",
-                        marginTop:"5rem"}}>
+                    <div className="lobby-container" >
                         <div className="lobby-video" style={{marginRight:"2rem"}}>
-                            {screen==true?<video style={{border:"1px solid black",height:"60vh",borderRadius: "20px",transform:"scaleX(1)"}} ref={localVideoref} autoPlay />:
-                            <video style={{border:"1px solid black",height:"60vh",borderRadius: "20px",transform:"scaleX(-1)"}} ref={localVideoref} autoPlay />}
+                            {screen==true?<video className='myVideo' style={{transform:"scaleX(1)"}} ref={localVideoref} autoPlay />:
+                            <video className='myVideo' style={{transform:"scaleX(-1)"}} ref={localVideoref} autoPlay />}
                         </div>
 
                         <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
@@ -550,7 +547,7 @@ useEffect(()=>{
 
                             </div>
 
-                            <div style={{display :"flex",justifyContent:"center",position:"absolute",bottom:"2px",width:"25vw"}}>
+                            <div className='sendMsg'>
                                 <TextField value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter Your chat" variant="outlined" />
                                 &nbsp;&nbsp;<Button variant='contained' onClick={sendMessage}>Send</Button>
                             </div>
@@ -586,16 +583,8 @@ useEffect(()=>{
 
                     {/* yaha local video */}
                     {/* text YOU */}
-                    <div className='you-text' style={{zIndex:"10",
-                        position:"absolute",
-                        top:"0.8rem",
-                        left:"1.5rem",
-                        color:"white",
-                        fontWeight:"700"}}> You </div>
-                    <div className="conferenceView" style={{display: "flex",
-                            flexWrap: "wrap",
-                            flexDirection: "row",
-                            padding: "0.5rem"}}>
+                    <div className='you-text'> You </div>
+                    <div className="conferenceView">
                             {screen==true?<video className="meetUserVideo" style={{transform:"scaleX(1)"}} ref={localVideoref} autoPlay />:
                             <video className="meetUserVideo" style={{transform:"scaleX(-1)"}} ref={localVideoref} autoPlay />}
 
