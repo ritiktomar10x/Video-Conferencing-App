@@ -7,7 +7,7 @@ import Authentication from './pages/authentication.jsx';
 import { AuthProvider } from './contexts/AuthContext.jsx';
 import FormContext from "./contexts/FormContext.jsx";
 import VideoMeetComponent from './pages/Video.jsx';
-import Home from './pages/home.jsx';
+import Home from './pages/Home.jsx';
 import History from './pages/History.jsx';
 
 
